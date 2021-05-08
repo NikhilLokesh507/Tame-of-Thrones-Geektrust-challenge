@@ -42,7 +42,7 @@ public enum Kingdom implements PoliticalEntity {
     }
 
     @Override
-    public Optional<List<PoliticalEntity>> attemptAlliance(Set<AllianceRequest> requests) {
+    public Optional<List<PoliticalEntity>> attemptAlliance(List<AllianceRequest> requests) {
         List<PoliticalEntity> allies = new LinkedList<>();
         allies.add(this);
         Optional<List<PoliticalEntity>> optional = Optional.empty();

@@ -1,9 +1,9 @@
 com/geektrust/tameofthrones/model/decider/Decider.class
+com/geektrust/tameofthrones/model/reciever/Receiver.class
 com/geektrust/tameofthrones/model/politicalentity/PoliticalEntity.class
 com/geektrust/tameofthrones/model/Kingdom.class
 com/geektrust/tameofthrones/Main.class
 com/geektrust/tameofthrones/model/alliance/AllianceRequest.class
-com/geektrust/tameofthrones/model/Reciever/Receiver.class
 com/geektrust/tameofthrones/model/encryption/Encryption.class
 com/geektrust/tameofthrones/model/encryption/EncryptionFactory.class
 com/geektrust/tameofthrones/model/encryption/Algorithm.class

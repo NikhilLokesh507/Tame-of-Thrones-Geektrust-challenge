@@ -30,15 +30,18 @@ public class Main {
 
     }
 
-    private static Set<AllianceRequest> extractFromFile(String file) throws IOException {
-        Set<AllianceRequest> requests = new HashSet<>();
+    private static List<AllianceRequest> extractFromFile(String file) throws IOException {
+        List<AllianceRequest> requests = new LinkedList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 int index = line.indexOf(' ');
                 Kingdom kingdom = Kingdom.valueOf(line.substring(0, index));
                 String message = line.substring(index + 1);
-                requests.add(new AllianceRequest(kingdom, message));
+                AllianceRequest request = new AllianceRequest(kingdom, message);
+                if (!requests.contains(request)) {
+                    requests.add(request);
+                }
             }
         }
         return requests;

@@ -25,7 +25,7 @@ public class TestPoliticalEntity {
             }
 
             @Override
-            public Optional<List<PoliticalEntity>> attemptAlliance(Set<AllianceRequest> requests) {
+            public Optional<List<PoliticalEntity>> attemptAlliance(List<AllianceRequest> requests) {
                 Optional<List<PoliticalEntity>> optional = Optional.empty();
                 List<PoliticalEntity> list = requests.stream()
                         .filter(request -> request.getPoliticalEntity().decide(request.getMessage()))
@@ -50,7 +50,7 @@ public class TestPoliticalEntity {
 
     @Test
     public void testAllianceMakingSuccessful() {
-        Set<AllianceRequest> requests = new HashSet<>();
+        List<AllianceRequest> requests = new LinkedList<>();
         for (int i = 0; i < 100; i++) {
             requests.add(new AllianceRequest(entity(), i % 2 == 0 ? ACCEPT_MESSAGE : UNACCEPT_MESSAGE));
         }
@@ -63,7 +63,7 @@ public class TestPoliticalEntity {
 
     @Test
     public void testAllianceMakingUnsuccessful() {
-        Set<AllianceRequest> requests = new HashSet<>();
+        List<AllianceRequest> requests = new LinkedList<>();
         for (int i = 0; i < 100; i++) {
             requests.add(new AllianceRequest(entity(), UNACCEPT_MESSAGE));
         }

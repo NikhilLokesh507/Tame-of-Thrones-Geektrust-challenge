@@ -1,4 +1,5 @@
 /Users/nikhil/Documents/Hevo/android/tameofthrones/src/main/java/com/geektrust/tameofthrones/model/encryption/Encryption.java
+/Users/nikhil/Documents/Hevo/android/tameofthrones/src/main/java/com/geektrust/tameofthrones/model/reciever/Receiver.java
 /Users/nikhil/Documents/Hevo/android/tameofthrones/src/main/java/com/geektrust/tameofthrones/model/encryption/CaesarCipher.java
 /Users/nikhil/Documents/Hevo/android/tameofthrones/src/main/java/com/geektrust/tameofthrones/model/encryption/Algorithm.java
 /Users/nikhil/Documents/Hevo/android/tameofthrones/src/main/java/com/geektrust/tameofthrones/model/encryption/StringBasedEncryptionFactory.java
@@ -10,4 +11,3 @@
 /Users/nikhil/Documents/Hevo/android/tameofthrones/src/main/java/com/geektrust/tameofthrones/model/encryption/AlgorithmNotFoundException.java
 /Users/nikhil/Documents/Hevo/android/tameofthrones/src/main/java/com/geektrust/tameofthrones/model/encryption/EncryptionFactory.java
 /Users/nikhil/Documents/Hevo/android/tameofthrones/src/main/java/com/geektrust/tameofthrones/model/Kingdom.java
-/Users/nikhil/Documents/Hevo/android/tameofthrones/src/main/java/com/geektrust/tameofthrones/model/Reciever/Receiver.java
