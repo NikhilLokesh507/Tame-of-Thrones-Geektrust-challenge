@@ -6,7 +6,7 @@ Interface `PoliticalEntity` implemented by the `Kingdom`.<br>
 ---
 ####Structure
  - `PoliciticalEntity` - Takes on the roles Decision making by interacting with other instances of `PolicitalEntity` along with attempting to make alliances.
- - `Decider` - Implemented by `PoliciticalEntity`, to abstract out the decision-making responsibility.
+ - `Decider` - Implemented by `PoliticalEntity`, to abstract out the decision-making responsibility.
  - `Reciever` - Implemented by `PoliticalEntity` to help an instance interact with other instances.
 ---
 ####Running the project
